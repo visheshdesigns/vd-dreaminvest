@@ -409,7 +409,7 @@ Our business success is credited to.</p>
 				
 				
 				<div class="footer-bottom">
-					<div class="left">Created by <a href="#" >ABCD.com</a></div>
+					<div class="left">Created by <a href="#" >VisheshDesigns.com</a></div>
 					<div class="right">
 						<ul id="social-bar">
 							<li><a href="#"  title="Become a fan" class="poshytip"><img src="img/social/facebook.png"  alt="Facebook" /></a></li>
