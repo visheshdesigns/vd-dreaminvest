@@ -1,0 +1,5 @@
+Database cjneng_dreaminvest
+
+user cjneng_vishesh with password vishesh123
+
+User “cjneng_vishesh” was added to the database “cjneng_dreaminvest”

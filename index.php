@@ -1,9 +1,10 @@
+<?php require_once('menu/header.php'); ?>
 <!doctype html>
 <html class="no-js">
 
 	<head>
 		<meta charset="utf-8"/>
-		<title>Dreaminvest.com</title>
+		<title>Dream Invest</title>
 		
 		<!--[if lt IE 9]>
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -11,10 +12,14 @@
 		<link rel="stylesheet" media="all" href="css/style.css"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<!-- JS -->
-		<script src="js/jquery-1.6.4.min.js"></script>
+		<script src="js/jquery-1.10.min.js"></script>
 		<script src="js/css3-mediaqueries.js"></script>
 		<script src="js/custom.js"></script>
 		<script src="js/tabs.js"></script>
+		 
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+		
+		<script src="js/bootstrap.min.js"></script>
 		
 		<!-- Tweet -->
 		<link rel="stylesheet" href="css/jquery.tweet.css" media="all"  /> 
@@ -138,18 +143,30 @@
 				<a href="index.html" id="logo"><img  src="img/di-logo.jpg" alt="Dram Invest"></a>
 				
 				<nav>
-					<ul id="nav" class="sf-menu">
-						<li class="current-menu-item"><a href="index.html">HOME</a></li>
-						<li><a href="about.html">ABOUT</a></li>
-						<li><a href="#">SERVICES</a><ul>
-								<li><a href="#">Submenu</a></li>
-								<li><a href="#">Submenu</a></li>
-								<li><a href="#">Submenu</a></li>
-							
-							</ul></li>
-						<li><a href="contact.html">CONTACT</a></li>
-					</ul>
+				<?php 
+					menu() 
+				?>
 					<div id="combo-holder"></div>
+					
+					<a href="#myModal"   data-toggle="modal">Login</a>
+ 				<!-- Modal -->
+				<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="modal-header">
+					<form class="form-inline">
+						<input type="text" class="input-small" placeholder="Email">
+						<input type="password" class="input-small" placeholder="Password">
+						<label class="checkbox">
+						<input type="checkbox"> Remember me
+						</label>
+						<button type="submit" class="btn">Sign in</button>
+					</form>
+					</div>
+					<div class="modal-footer">
+						<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+						<button class="btn btn-primary">Login</button>
+					</div>
+				</div>
+					
 				</nav>
 			</div>
 		</header>
